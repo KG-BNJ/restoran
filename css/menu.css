@@ -1,14 +1,14 @@
 :root {
-  --paper: #f3eee6;
-  --ink: #1c1814;
-  --muted: #5e564c;
-  --line: rgba(28, 24, 20, 0.14);
-  --rust: #9a3a1e;
-  --sage: #3d4a36;
+  --paper: #f4f1ec;
+  --ink: #141414;
+  --muted: #5f5953;
+  --line: #e4ddd4;
+  --rust: #e23b16;
+  --sage: #141414;
   color: var(--ink);
   background: var(--paper);
   font-family: "Outfit", sans-serif;
-  font-weight: 360;
+  font-weight: 400;
   line-height: 1.45;
 }
 
@@ -43,8 +43,7 @@ a {
 h1,
 h2,
 h3 {
-  font-family: "Fraunces", serif;
-  font-weight: 560;
+  font-weight: 600;
   letter-spacing: -0.03em;
 }
 
@@ -64,9 +63,8 @@ h3 {
 
 h1 {
   margin: 0.35rem 0 0.3rem;
-  font-size: clamp(2.6rem, 14vw, 3.2rem);
-  line-height: 0.9;
-  font-weight: 620;
+  font-size: 2rem;
+  line-height: 1.05;
 }
 
 .lede,
@@ -86,7 +84,7 @@ footer {
   gap: 0.4rem;
   overflow-x: auto;
   padding: 0.75rem 1.15rem;
-  background: rgba(243, 238, 230, 0.92);
+  background: rgba(244, 241, 236, 0.94);
   backdrop-filter: blur(12px);
 }
 
@@ -140,8 +138,9 @@ footer {
 }
 
 .group span {
-  font-family: "Fraunces", serif;
-  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--rust);
+  font-size: 1rem;
 }
 
 footer {
