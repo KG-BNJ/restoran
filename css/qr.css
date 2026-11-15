@@ -59,11 +59,12 @@ label {
 }
 
 input {
-  max-width: 28rem;
+  width: min(28rem, 100%);
   border: 1px solid var(--line);
   background: #fffdf8;
   border-radius: 0.7rem;
   padding: 0.7rem 0.8rem;
+  font-size: 1rem;
 }
 
 .hint {

@@ -714,12 +714,64 @@ button {
 }
 
 @media (max-width: 980px) {
-  .board {
+  .board,
+  .page-kitchen .board {
     grid-template-columns: 1fr;
     height: auto;
   }
 
   .board section {
     min-height: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .top {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 0.55rem 0.7rem;
+    padding: 0.75rem 0.85rem;
+  }
+
+  .clock {
+    margin: 0;
+    justify-self: end;
+    font-size: 0.85rem;
+  }
+
+  .screens {
+    grid-column: 1 / -1;
+    min-width: 0;
+    overflow-x: auto;
+    padding-bottom: 0.15rem;
+  }
+
+  .screens a {
+    flex: none;
+  }
+
+  .stat {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+
+  .brand a {
+    font-size: 1.35rem;
+  }
+
+  .print-note {
+    padding: 0.45rem 0.85rem;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pad button,
+  .table-btn,
+  .pay-btn,
+  .line-btn {
+    min-height: 2.75rem;
   }
 }
