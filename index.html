@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Restoran</title>
+    <meta
+      name="description"
+      content="Köz ateşinde hazırlanan tabaklar ve paylaşılacak sofra. Menü, hikâye ve rezervasyon."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,620&family=Outfit:wght@360;480;560&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23c24d2c' width='32' height='32' rx='6'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="wordmark" href="#tepe">Restoran</a>
+      <nav class="nav-links" aria-label="Sayfa">
+        <a href="#menu">Menü</a>
+        <a href="#hikaye">Hikâye</a>
+        <a href="#rezervasyon">Rezervasyon</a>
+      </nav>
+      <div class="nav-staff">
+        <a href="garson.html">Garson</a>
+        <a href="kasa.html">Kasa</a>
+        <a href="mutfak.html">Mutfak</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="tepe">
+        <p class="kicker">İstanbul · Karaköy · 2014</p>
+        <h1>Restoran</h1>
+        <p class="lede">
+          Köz, tereyağı ve paylaşılacak tabaklar. Akşamları masa, ateşin hemen yanında.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#rezervasyon">Masa ayırt</a>
+          <a class="button button-ghost" href="#menu">Menüyü gör</a>
+        </div>
+        <dl class="hero-facts">
+          <div>
+            <dt>Akşam servisi</dt>
+            <dd>17:00 — 00:00</dd>
+          </div>
+          <div>
+            <dt>Mutfak kapanış</dt>
+            <dd>23:15</dd>
+          </div>
+          <div>
+            <dt>Adres</dt>
+            <dd>Kemankeş Cad. No 18</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="section" id="menu">
+        <div class="section-head">
+          <p class="index">01</p>
+          <div>
+            <h2>Menü</h2>
+            <p>Fiyatlar KDV dahildir. Mevsimlik tabaklar haftalık değişir; bu liste örnek menüdür.</p>
+          </div>
+        </div>
+        <div class="cats" id="cats" role="tablist" aria-label="Menü kategorileri"></div>
+        <ul class="dishes" id="dishes"></ul>
+      </section>
+
+      <section class="section story" id="hikaye">
+        <div class="section-head">
+          <p class="index">02</p>
+          <div>
+            <h2>Ateşin etrafında</h2>
+            <p>
+              Karaköy’de küçük bir ocak başı. Et közde, hamur evde açılır, yoğurt her sabah
+              kurulur. Masa paylaşmak içindir: bir başlangıç, bir ızgara, ince belli çay.
+            </p>
+          </div>
+        </div>
+        <blockquote>
+          “Tabak büyük olsun, tempo yavaş olsun. Misafir kalkmadan mutfak kapanmasın.”
+        </blockquote>
+        <ul class="notes">
+          <li>
+            <strong>Rezervasyon</strong>
+            <span>Akşamları masa önerilir. Öğle yürüyüş için yer tutulmaz.</span>
+          </li>
+          <li>
+            <strong>Grup</strong>
+            <span>Sekiz kişiden büyük masalar için bir gün önceden haber verin.</span>
+          </li>
+          <li>
+            <strong>Alerjen</strong>
+            <span>Gluten, süt ve fıstık mutfakta kullanılır. Serviste sorun.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section visit" id="ziyaret">
+        <div class="section-head">
+          <p class="index">03</p>
+          <div>
+            <h2>Ziyaret</h2>
+            <p>Salı günleri kapalıyız. Diğer günler akşam servisi.</p>
+          </div>
+        </div>
+        <div class="visit-grid">
+          <article>
+            <h3>Saatler</h3>
+            <p>Çarşamba — Pazar</p>
+            <p>17:00 — 00:00</p>
+            <p class="muted">Mutfak 23:15’te kapanır.</p>
+          </article>
+          <article>
+            <h3>Adres</h3>
+            <p>Kemankeş Caddesi No 18</p>
+            <p>Karaköy, Beyoğlu</p>
+            <p class="muted">İstanbul</p>
+          </article>
+          <article>
+            <h3>İletişim</h3>
+            <p>0212 000 00 00</p>
+            <p>merhaba@ornek.email</p>
+            <p class="muted">Örnek bilgiler, sonra değiştirilecek.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reserve" id="rezervasyon">
+        <div class="section-head">
+          <p class="index">04</p>
+          <div>
+            <h2>Rezervasyon</h2>
+            <p>Bu form şimdilik örnek. Gönderince kayıt tarayıcıda kalır, bir sunucuya gitmez.</p>
+          </div>
+        </div>
+        <form class="reserve-form" id="reserve-form">
+          <label>
+            Ad
+            <input name="name" required autocomplete="name" placeholder="Adınız" />
+          </label>
+          <label>
+            Telefon
+            <input name="phone" required autocomplete="tel" placeholder="05xx" />
+          </label>
+          <label>
+            Tarih
+            <input name="date" type="date" required />
+          </label>
+          <label>
+            Saat
+            <input name="time" type="time" required value="19:30" />
+          </label>
+          <label>
+            Kişi
+            <input name="guests" type="number" min="1" max="12" value="2" required />
+          </label>
+          <label class="wide">
+            Not
+            <textarea name="note" rows="3" placeholder="Pencere kenarı, alerji, kutlama…"></textarea>
+          </label>
+          <button class="button wide" type="submit">İsteği bırak</button>
+        </form>
+        <div class="reserve-done" id="reserve-done" hidden>
+          <p class="kicker">Not alındı</p>
+          <h3 id="reserve-summary"></h3>
+          <p>Gerçek bir sisteme bağlanınca bu istek masaya düşecek. Şimdilik yalnızca bu tarayıcıda duruyor.</p>
+          <button class="button button-ghost" type="button" id="reserve-again">Yeni istek</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Örnek restoran sitesi</p>
+      <div class="footer-links">
+        <a href="menu.html">Müşteri menüsü</a>
+        <a href="qr.html">QR</a>
+        <a href="garson.html">Garson</a>
+        <a href="kasa.html">Kasa</a>
+        <a href="mutfak.html">Mutfak</a>
+      </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/site.js"></script>
+  </body>
+</html>

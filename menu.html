@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menü</title>
+    <meta name="description" content="Restoran menüsü. Fiyatlar KDV dahildir." />
+    <meta name="theme-color" content="#f3eee6" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,620&family=Outfit:wght@360;480;560&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23c24d2c' width='32' height='32' rx='6'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="top">
+        <a class="wordmark" href="index.html">Restoran</a>
+        <p class="table" id="table-label" hidden></p>
+        <h1>Menü</h1>
+        <p class="lede">Fiyatlar KDV dahildir. Sipariş için garsonunuza söyleyin.</p>
+      </header>
+      <nav class="cats" id="cats" aria-label="Kategoriler"></nav>
+      <main id="groups"></main>
+      <footer>
+        <p>Gluten, süt ve fıstık mutfakta kullanılır.</p>
+        <p>Çarşamba — Pazar · 17:00 — 00:00</p>
+      </footer>
+    </div>
+    <script src="js/menu.js"></script>
+    <script src="js/musteri.js"></script>
+  </body>
+</html>

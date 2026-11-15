@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kasa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Outfit:wght@360;480;560&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/kasa.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23100e0c' width='32' height='32'/%3E%3Ctext y='23' x='7' fill='%23e08a4f' font-size='18' font-family='Georgia'%3EK%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="brand">
+        <a href="index.html">Restoran</a>
+        <span>Kasa</span>
+      </div>
+      <nav class="screens" aria-label="Ekranlar">
+        <a href="garson.html">Garson</a>
+        <a href="kasa.html" aria-current="page">Kasa</a>
+        <a href="mutfak.html">Mutfak</a>
+      </nav>
+      <p class="clock" id="clock"></p>
+      <button class="stat" type="button" id="open-day">
+        <span>Bugün</span>
+        <strong id="day-total">₺0</strong>
+        <em id="day-count">0 adisyon</em>
+      </button>
+    </header>
+
+    <div class="layout">
+      <aside class="tables" aria-label="Masalar">
+        <p class="label">Masalar</p>
+        <div class="table-grid" id="tables"></div>
+      </aside>
+
+      <section class="menu-pane bill-pane" aria-label="Açık adisyon">
+        <div class="ticket-head">
+          <div>
+            <p class="label">Ödeme</p>
+            <h2 id="table-title">Masa 1</h2>
+          </div>
+          <button class="text-btn" type="button" id="cancel-bill">İptal</button>
+        </div>
+        <p class="hint" id="draft-hint" hidden></p>
+        <div id="rounds"></div>
+      </section>
+
+      <aside class="ticket" aria-label="Tahsilat">
+        <p class="label">Tahsilat</p>
+        <div class="totals">
+          <div><span>Ara toplam</span><span id="net">₺0</span></div>
+          <div><span>KDV %10</span><span id="vat">₺0</span></div>
+          <div class="grand"><span>Toplam</span><strong id="grand">₺0</strong></div>
+        </div>
+        <div class="pay">
+          <div class="methods" role="group" aria-label="Ödeme tipi">
+            <button type="button" class="method is-on" data-method="nakit">Nakit</button>
+            <button type="button" class="method" data-method="kart">Kart</button>
+          </div>
+          <div id="cash-box">
+            <label class="cash-label">
+              Alınan
+              <input id="cash" inputmode="numeric" value="" placeholder="0" />
+            </label>
+            <div class="pad" id="pad"></div>
+            <p class="change" id="change">Para üstü ₺0</p>
+          </div>
+          <button class="pay-btn" type="button" id="pay" disabled>Ödemeyi al</button>
+        </div>
+      </aside>
+    </div>
+
+    <dialog class="sheet" id="day-sheet">
+      <form method="dialog">
+        <header>
+          <h3>Bugünkü adisyonlar</h3>
+          <button class="text-btn" value="cancel">Kapat</button>
+        </header>
+        <ul id="day-list"></ul>
+        <p class="empty" id="day-empty">Henüz kapanmış adisyon yok.</p>
+      </form>
+    </dialog>
+
+    <dialog class="sheet receipt" id="receipt">
+      <form method="dialog">
+        <p class="label">Fiş</p>
+        <h3>Ödeme alındı</h3>
+        <p id="receipt-meta"></p>
+        <ul id="receipt-lines"></ul>
+        <p class="receipt-total" id="receipt-total"></p>
+        <button class="pay-btn" value="default">Tamam</button>
+      </form>
+    </dialog>
+
+    <script src="js/menu.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/kasa.js"></script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+:root {
+  --paper: #f3eee6;
+  --ink: #1c1814;
+  --muted: #5e564c;
+  --line: rgba(28, 24, 20, 0.14);
+  --rust: #9a3a1e;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: "Outfit", sans-serif;
+  font-weight: 360;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--rust);
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+.top {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.2rem 0.4rem;
+}
+
+.wordmark {
+  font-family: "Fraunces", serif;
+  font-size: 1.8rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.top p {
+  max-width: 36rem;
+  color: var(--muted);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+input {
+  max-width: 28rem;
+  border: 1px solid var(--line);
+  background: #fffdf8;
+  border-radius: 0.7rem;
+  padding: 0.7rem 0.8rem;
+}
+
+.hint {
+  color: var(--rust);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  margin: 0.8rem 0 1rem;
+}
+
+button,
+.actions a {
+  border: 1px solid var(--line);
+  background: transparent;
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  text-decoration: none;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+#print {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1rem;
+  padding: 0.6rem 1.2rem 2rem;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.card {
+  break-inside: avoid;
+  background: #fffdf8;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 1rem 1rem 0.9rem;
+  text-align: center;
+}
+
+.kicker {
+  margin: 0;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--rust);
+}
+
+.card h2 {
+  margin: 0.2rem 0 0.6rem;
+  font-family: "Fraunces", serif;
+  font-weight: 560;
+  font-size: 1.8rem;
+}
+
+.qr svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.note {
+  margin: 0.45rem 0 0;
+}
+
+.address {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+  word-break: break-all;
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    max-width: none;
+    padding: 0;
+  }
+
+  .card {
+    box-shadow: none;
+  }
+}

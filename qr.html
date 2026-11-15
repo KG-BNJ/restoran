@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Masa kartları</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Outfit:wght@360;480;560&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/qr.css" />
+  </head>
+  <body>
+    <header class="top no-print">
+      <a class="wordmark" href="index.html">Restoran</a>
+      <p>Bu kartlar masaya konur. Misafir okutunca telefonunda menü açılır.</p>
+      <label>
+        Telefonda açılacak adres
+        <input id="base" type="url" placeholder="http://192.168.1.101:8765" />
+      </label>
+      <p class="hint" id="hint">
+        Bu adres yalnızca bu bilgisayarda açılır. Telefonla okutmak için bilgisayarın Wi-Fi adresini yazın.
+      </p>
+      <div class="actions">
+        <button type="button" id="use-origin">Bu sayfanın adresini kullan</button>
+        <button type="button" id="print">Kartları yazdır</button>
+        <a href="menu.html">Menüyü önizle</a>
+      </div>
+    </header>
+    <div class="cards" id="cards"></div>
+    <script src="js/qrcode.js"></script>
+    <script src="js/links.js"></script>
+    <script src="js/qr.js"></script>
+  </body>
+</html>
