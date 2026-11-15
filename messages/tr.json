@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "title": "Restoran",
+    "description": "Karaköy’de köz ateşi, paylaşılacak tabaklar ve akşam rezervasyonu."
+  },
+  "nav": {
+    "menu": "Menü",
+    "story": "Hikâye",
+    "gallery": "Galeri",
+    "contact": "İletişim",
+    "events": "Etkinlik",
+    "reserve": "Rezervasyon Yap"
+  },
+  "action": {
+    "call": "Ara",
+    "directions": "Yol tarifi",
+    "reserve": "Rezervasyon"
+  },
+  "home": {
+    "kicker": "İstanbul · Karaköy",
+    "title": "Köz, tereyağı ve paylaşılacak tabaklar.",
+    "lede": "Akşamları masa, ateşin hemen yanında.",
+    "cta": "Rezervasyon Yap",
+    "signaturesTitle": "Masada kalanlar",
+    "signaturesLede": "Akşam servisinde en çok paylaşılan tabaklar.",
+    "storyTitle": "Ateşin yanında",
+    "storyLede": "Karaköy’de akşam servisi köz, tereyağı ve paylaşılacak tabaklar üzerine kuruldu. Mutfak 17:00’de açılır, 23:15’te kapanır.",
+    "storyMore": "Hikâyeyi oku",
+    "galleryTitle": "Galeri",
+    "galleryLede": "Salon, ocak ve akşam masası.",
+    "galleryMore": "Tümünü gör",
+    "closeTitle": "Akşam için bir masa ayırın.",
+    "closeLede": "Çarşamba–pazar, 17:00–00:00. Pazartesi ve salı kapalıyız."
+  },
+  "story": {
+    "title": "Ateşin yanında",
+    "kicker": "Karaköy",
+    "lead": "Akşam servisi, ocağın hemen yanında kurulur.",
+    "p1": "Masa ateşe yakındır. Tabaklar ortaya konur ve paylaşılır: köz, tereyağı, ince ekmek.",
+    "p2": "Izgara közde pişer. Yanında sumak soğan, köz biber ve salata vardır. Tatlı ve çay servisin sonunda gelir.",
+    "p3": "Kapılar çarşamba akşamı 17:00’de açılır, pazar gece yarısı kapanır. Pazartesi ve salı kapalıyız. Mutfak 23:15’te son siparişi alır.",
+    "close": "Kemankeş Cad. No 18, Karaköy. Akşam için bir masa ayırın.",
+    "reserve": "Rezervasyon Yap"
+  },
+  "reserve": {
+    "title": "Rezervasyon",
+    "lead": "Akşam için masa ayırın. İsteğiniz kaydedilir, onay için sizi ararız.",
+    "hours": "Çarşamba–pazar, 17:00–23:00. Pazartesi ve salı kapalıyız. Mutfak 23:15’te kapanır.",
+    "callLead": "Butona basmadan da ayırabilirsiniz. Arayın:",
+    "whatsapp": "WhatsApp’tan yazın",
+    "whatsappText": "Merhaba, akşam için masa ayırtmak istiyorum.",
+    "name": "Ad soyad",
+    "phone": "Telefon",
+    "email": "E-posta (isteğe bağlı)",
+    "date": "Tarih",
+    "time": "Saat",
+    "guests": "Kişi",
+    "note": "Not",
+    "submit": "İsteği gönder",
+    "sending": "Gönderiliyor",
+    "success": "İsteğiniz alındı. Onay için sizi arayacağız.",
+    "error": {
+      "name": "Ad en az iki harf olmalı.",
+      "phone": "Telefon numarasını kontrol edin.",
+      "email": "E-posta adresini kontrol edin.",
+      "guests": "Kişi sayısı 1 ile 10 arasında olmalı.",
+      "date": "Geçerli bir tarih seçin.",
+      "closed": "Pazartesi ve salı kapalıyız.",
+      "time": "Saat 17:00 ile 23:00 arasında olmalı.",
+      "past": "Bu saat geçmiş. Daha ileri bir saat seçin.",
+      "range": "En fazla 60 gün sonrasına rezervasyon alınır.",
+      "limit": "Çok fazla deneme. Biraz sonra yeniden deneyin.",
+      "failed": "İstek gönderilemedi. Yeniden deneyin."
+    }
+  },
+  "contact": {
+    "title": "İletişim",
+    "lead": "Kemankeş Caddesi, Karaköy. Arama, WhatsApp ve yol tarifi aynı numaradan.",
+    "call": "Ara",
+    "whatsapp": "WhatsApp",
+    "directions": "Yol tarifi",
+    "map": "Karaköy haritası",
+    "parkingTitle": "Otopark",
+    "parking": "Sokak parkı sınırlı. Yakın otopark bilgisi işletmeden doğrulanacak.",
+    "hoursTitle": "Saatler",
+    "closed": "Kapalı"
+  },
+  "pages": {
+    "soon": "Bu bölüm sıradaki adımda dolacak.",
+    "menu": "Menü",
+    "story": "Hikâye",
+    "gallery": "Galeri",
+    "reserve": "Rezervasyon",
+    "contact": "İletişim",
+    "events": "Etkinlik"
+  },
+  "hours": {
+    "open": "Açık",
+    "closed": "Kapalı",
+    "kitchen": "Mutfak kapandı",
+    "shut": "Bugün kapalı",
+    "kitchenNote": "Mutfak 23:15’te kapanır."
+  },
+  "tags": {
+    "vegan": "Vegan",
+    "vegetarian": "Vejetaryen",
+    "gluten-free": "Glutensiz",
+    "spicy": "Acılı"
+  },
+  "menuPage": {
+    "note": "Fiyatlar KDV dahildir.",
+    "pdf": "PDF menü eklenecek."
+  },
+  "footer": {
+    "note": "Örnek restoran sitesi",
+    "address": "Kemankeş Cad. No 18, Karaköy"
+  }
+}

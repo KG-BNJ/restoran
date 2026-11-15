@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "title": "Restaurant",
+    "description": "Open fire in Karaköy, plates meant to be shared, and an evening table."
+  },
+  "nav": {
+    "menu": "Menu",
+    "story": "Story",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "events": "Events",
+    "reserve": "Reserve a table"
+  },
+  "action": {
+    "call": "Call",
+    "directions": "Directions",
+    "reserve": "Reserve"
+  },
+  "home": {
+    "kicker": "Istanbul · Karaköy",
+    "title": "Fire, butter, and plates meant to be shared.",
+    "lede": "In the evening the table sits beside the hearth.",
+    "cta": "Reserve a table",
+    "signaturesTitle": "What stays on the table",
+    "signaturesLede": "The plates shared most often at dinner.",
+    "storyTitle": "Beside the fire",
+    "storyLede": "Evening service in Karaköy is built around the hearth, butter, and plates meant to be shared. The kitchen opens at 17:00 and closes at 23:15.",
+    "storyMore": "Read the story",
+    "galleryTitle": "Gallery",
+    "galleryLede": "The dining room, the hearth, and the evening table.",
+    "galleryMore": "See all",
+    "closeTitle": "Save a table for the evening.",
+    "closeLede": "Wednesday–Sunday, 17:00–00:00. Closed Monday and Tuesday."
+  },
+  "story": {
+    "title": "Beside the fire",
+    "kicker": "Karaköy",
+    "lead": "Evening service is set up right beside the hearth.",
+    "p1": "The table sits close to the fire. Plates come to the middle and are shared: coals, butter, and thin bread.",
+    "p2": "The grill cooks over the embers, with sumac onions, charred peppers, and salad. Dessert and tea close the meal.",
+    "p3": "The doors open Wednesday at 17:00 and close Sunday at midnight. We are closed Monday and Tuesday. The kitchen takes its last order at 23:15.",
+    "close": "Kemankeş Cad. No 18, Karaköy. Save a table for the evening.",
+    "reserve": "Reserve a table"
+  },
+  "reserve": {
+    "title": "Reservation",
+    "lead": "Save a table for the evening. We keep the request and call you to confirm.",
+    "hours": "Wednesday–Sunday, 17:00–23:00. Closed Monday and Tuesday. The kitchen closes at 23:15.",
+    "callLead": "You can reserve without the button. Call:",
+    "whatsapp": "Message on WhatsApp",
+    "whatsappText": "Hello, I would like a table for the evening.",
+    "name": "Full name",
+    "phone": "Phone",
+    "email": "Email (optional)",
+    "date": "Date",
+    "time": "Time",
+    "guests": "Guests",
+    "note": "Note",
+    "submit": "Send request",
+    "sending": "Sending",
+    "success": "Request received. We will call you to confirm.",
+    "error": {
+      "name": "The name needs at least two letters.",
+      "phone": "Check the phone number.",
+      "email": "Check the email address.",
+      "guests": "Guest count must be between 1 and 10.",
+      "date": "Choose a valid date.",
+      "closed": "We are closed on Monday and Tuesday.",
+      "time": "Choose a time between 17:00 and 23:00.",
+      "past": "That time has passed. Choose a later one.",
+      "range": "Reservations are open up to 60 days ahead.",
+      "limit": "Too many attempts. Try again shortly.",
+      "failed": "The request could not be sent. Try again."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "lead": "Kemankeş Caddesi, Karaköy. Call, WhatsApp, and directions use the same number.",
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "directions": "Directions",
+    "map": "Map of Karaköy",
+    "parkingTitle": "Parking",
+    "parking": "Street parking is limited. Nearby parking details will be confirmed by the restaurant.",
+    "hoursTitle": "Hours",
+    "closed": "Closed"
+  },
+  "pages": {
+    "soon": "This section is filled in the next step.",
+    "menu": "Menu",
+    "story": "Story",
+    "gallery": "Gallery",
+    "reserve": "Reservation",
+    "contact": "Contact",
+    "events": "Events"
+  },
+  "hours": {
+    "open": "Open now",
+    "closed": "Closed",
+    "kitchen": "Kitchen closed",
+    "shut": "Closed today",
+    "kitchenNote": "The kitchen closes at 23:15."
+  },
+  "tags": {
+    "vegan": "Vegan",
+    "vegetarian": "Vegetarian",
+    "gluten-free": "Gluten-free",
+    "spicy": "Spicy"
+  },
+  "menuPage": {
+    "note": "Prices include VAT.",
+    "pdf": "PDF menu coming soon."
+  },
+  "footer": {
+    "note": "Sample restaurant site",
+    "address": "Kemankeş Cad. No 18, Karaköy"
+  }
+}
