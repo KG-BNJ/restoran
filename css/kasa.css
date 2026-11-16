@@ -1,18 +1,18 @@
 :root {
-  --bg: #100e0c;
-  --panel: #1a1714;
-  --panel-2: #26211c;
-  --line: rgba(243, 238, 230, 0.1);
-  --text: #f4efe6;
-  --muted: #a89b8c;
-  --copper: #e08a4f;
-  --copper-ink: #2a160c;
-  --good: #b7d7a4;
-  --danger: #e07a68;
+  --bg: #f7f6f2;
+  --panel: #f6f3ea;
+  --panel-2: #ffffff;
+  --line: #d9ddd6;
+  --text: #1a211c;
+  --muted: #5d675f;
+  --copper: #14382c;
+  --copper-ink: #f6f3ea;
+  --good: #2f6b4f;
+  --danger: #8d3a32;
   color: var(--text);
   background: var(--bg);
-  font-family: "Outfit", sans-serif;
-  font-weight: 360;
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
 }
 
 * {
@@ -43,7 +43,8 @@ button {
   align-items: center;
   gap: 1.2rem;
   padding: 0.85rem 1.1rem;
-  border-bottom: 1px solid var(--line);
+  background: var(--copper);
+  color: var(--copper-ink);
 }
 
 .brand {
@@ -55,7 +56,7 @@ button {
 .brand a {
   color: inherit;
   text-decoration: none;
-  font-family: "Fraunces", serif;
+  font-family: "Newsreader", serif;
   font-size: 1.6rem;
 }
 
@@ -63,6 +64,19 @@ button {
 .label,
 .clock {
   color: var(--muted);
+}
+
+.top .brand span,
+.top .clock,
+.top .stat span,
+.top .stat em {
+  color: #d5ddd6;
+}
+
+.top .stat {
+  background: transparent;
+  border-color: rgba(246, 243, 234, 0.35);
+  color: var(--copper-ink);
 }
 
 .clock {
@@ -76,12 +90,12 @@ button {
   gap: 0.55rem;
   border: 1px solid var(--line);
   background: var(--panel);
-  border-radius: 999px;
+  border-radius: 2px;
   padding: 0.45rem 0.9rem;
 }
 
 .stat strong {
-  font-family: "Fraunces", serif;
+  font-family: "Newsreader", serif;
   font-size: 1.25rem;
   font-weight: 560;
 }
@@ -125,7 +139,7 @@ button {
   position: relative;
   border: 1px solid var(--line);
   background: var(--panel-2);
-  border-radius: 0.8rem;
+  border-radius: 2px;
   min-height: 3.4rem;
 }
 
@@ -167,7 +181,7 @@ button {
 .method {
   border: 1px solid var(--line);
   background: transparent;
-  border-radius: 999px;
+  border-radius: 2px;
   padding: 0.45rem 0.8rem;
 }
 
@@ -189,7 +203,7 @@ button {
   text-align: left;
   border: 1px solid var(--line);
   background: var(--panel);
-  border-radius: 0.9rem;
+  border-radius: 2px;
   padding: 0.8rem;
   min-height: 5.6rem;
   display: flex;
@@ -198,7 +212,7 @@ button {
 }
 
 .product:hover {
-  border-color: rgba(224, 138, 79, 0.7);
+  border-color: var(--copper);
 }
 
 .product strong {
@@ -207,7 +221,7 @@ button {
 
 .product span {
   color: var(--copper);
-  font-family: "Fraunces", serif;
+  font-family: "Newsreader", serif;
 }
 
 .ticket {
@@ -226,7 +240,7 @@ button {
 
 .ticket-head h2 {
   margin: 0;
-  font-family: "Fraunces", serif;
+  font-family: "Newsreader", serif;
   font-weight: 560;
   font-size: 1.8rem;
 }
@@ -271,13 +285,13 @@ button {
 .qty button {
   width: 1.7rem;
   height: 1.7rem;
-  border-radius: 0.4rem;
+  border-radius: 2px;
   border: 1px solid var(--line);
   background: var(--panel-2);
 }
 
 .line-price {
-  font-family: "Fraunces", serif;
+  font-family: "Newsreader", serif;
 }
 
 .empty-line {
@@ -306,7 +320,7 @@ button {
 }
 
 .grand strong {
-  font-family: "Fraunces", serif;
+  font-family: "Newsreader", serif;
   font-size: 2rem;
   font-weight: 560;
 }
@@ -330,7 +344,7 @@ button {
   text-align: right;
   background: var(--bg);
   border: 1px solid var(--line);
-  border-radius: 0.6rem;
+  border-radius: 2px;
   padding: 0.45rem 0.6rem;
 }
 
@@ -344,7 +358,7 @@ button {
 .pad button {
   background: var(--panel-2);
   border: 1px solid var(--line);
-  border-radius: 0.55rem;
+  border-radius: 2px;
   min-height: 2.5rem;
 }
 
@@ -360,7 +374,7 @@ button {
 .pay-btn {
   width: 100%;
   border: 0;
-  border-radius: 0.8rem;
+  border-radius: 2px;
   padding: 0.9rem;
   background: var(--copper);
   color: var(--copper-ink);
@@ -376,7 +390,7 @@ button {
   border: 1px solid var(--line);
   background: var(--panel);
   color: var(--text);
-  border-radius: 1rem;
+  border-radius: 2px;
   width: min(28rem, calc(100vw - 2rem));
   padding: 1.1rem;
 }
@@ -400,7 +414,7 @@ button {
 
 .sheet h3 {
   margin: 0;
-  font-family: "Fraunces", serif;
+  font-family: "Newsreader", serif;
   font-weight: 560;
 }
 
@@ -426,7 +440,7 @@ button {
 }
 
 .receipt-total {
-  font-family: "Fraunces", serif;
+  font-family: "Newsreader", serif;
   font-size: 1.8rem;
   margin: 0.2rem 0 0.6rem;
 }
@@ -462,10 +476,10 @@ button {
 }
 
 .screens a {
-  color: var(--muted);
+  color: #d5ddd6;
   text-decoration: none;
-  border: 1px solid var(--line);
-  border-radius: 999px;
+  border: 1px solid rgba(246, 243, 234, 0.35);
+  border-radius: 2px;
   padding: 0.35rem 0.7rem;
   font-size: 0.88rem;
 }
@@ -542,7 +556,7 @@ button {
 
 .pill {
   font-size: 0.75rem;
-  border-radius: 999px;
+  border-radius: 2px;
   padding: 0.15rem 0.5rem;
   border: 1px solid var(--line);
   color: var(--muted);
@@ -555,13 +569,13 @@ button {
 }
 
 .pill.is-ready {
-  color: #1c2818;
+  color: var(--copper-ink);
   background: var(--good);
   border-color: var(--good);
 }
 
 #bill-total {
-  font-family: "Fraunces", serif;
+  font-family: "Newsreader", serif;
   color: var(--text);
   font-size: 1.3rem;
 }
@@ -576,7 +590,7 @@ button {
 
 .board section {
   background: var(--panel);
-  border-radius: 1rem;
+  border-radius: 2px;
   padding: 0.85rem;
   min-height: 0;
   overflow: auto;
@@ -584,7 +598,7 @@ button {
 
 .board h2 {
   margin: 0 0 0.7rem;
-  font-family: "Fraunces", serif;
+  font-family: "Newsreader", serif;
   font-weight: 560;
   font-size: 1.5rem;
 }
@@ -592,7 +606,7 @@ button {
 .k-card {
   background: var(--panel-2);
   border: 1px solid var(--line);
-  border-radius: 0.9rem;
+  border-radius: 2px;
   padding: 0.85rem;
   margin-bottom: 0.6rem;
 }
@@ -607,7 +621,7 @@ button {
 
 .k-head h3 {
   margin: 0;
-  font-family: "Fraunces", serif;
+  font-family: "Newsreader", serif;
   font-weight: 560;
   font-size: 1.7rem;
 }
@@ -637,7 +651,7 @@ button {
 .line-btn {
   border: 1px solid var(--line);
   background: transparent;
-  border-radius: 0.7rem;
+  border-radius: 2px;
   padding: 0.55rem;
   color: var(--text);
 }
@@ -661,7 +675,7 @@ button {
 .slip {
   width: 72mm;
   color: #111;
-  font-family: "Outfit", sans-serif;
+  font-family: "Figtree", sans-serif;
 }
 
 .slip-brand {
@@ -673,7 +687,7 @@ button {
 
 .slip h2 {
   margin: 0.15rem 0;
-  font-family: "Fraunces", serif;
+  font-family: "Newsreader", serif;
   font-size: 28pt;
   line-height: 1;
 }
